@@ -5,8 +5,8 @@ namespace introduce_to_c {
         static void Main() {
             Console.WriteLine("Hello");
             Console.Write("Hello 1");
-            Console.Write("Hello 2");
-            Console.Write("Hello 3");
+            Console.Write("Hello 2\n");
+            Console.Write("Hello 3\n\n");
             Console.ReadKey();
         }
     }
