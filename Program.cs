@@ -14,6 +14,21 @@ namespace introduce_to_c {
             float num = 4.56f;
             // double num = 44.77d; 2x
             Console.WriteLine("Variable: " + num + ".");
+
+            string word = "Variable: "; // string ""
+            char symbol = '.'; // char ''
+            Console.WriteLine(word + num + symbol);
+
+            bool isHappy = true;
+            // bool notHappy = false;
+            Console.WriteLine(isHappy);
+
+            int num_1 = 0, num_2 = 0;
+
+            num_1 = Convert.ToInt32(Console.ReadLine());
+            num_2 = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("First: " + num_1 + ". " + "Second: " + num_2 + ".");
         }
     }
 }
