@@ -4,31 +4,28 @@ namespace introduce_to_c {
     class Program {
         static void Main() {
 
-            // byte number = 255; 8bit
-            // short number = 32000; 16bit
-            // int number = 100; 32bit
-            long number = 1000; // 64bit
-            number = 10;
-            Console.WriteLine("Variable: " + number + ".");
+            // double user_input = Convert.ToDouble(Console.ReadLine());
 
-            float num = 4.56f;
-            // double num = 44.77d; 2x
-            Console.WriteLine("Variable: " + num + ".");
+            Console.Write("Enter a number with a dot: ");
 
-            string word = "Variable: "; // string ""
-            char symbol = '.'; // char ''
-            Console.WriteLine(word + num + symbol);
+            float user_input = float.Parse(Console.ReadLine());
 
-            bool isHappy = true;
-            // bool notHappy = false;
-            Console.WriteLine(isHappy);
+            float result;
 
-            int num_1 = 0, num_2 = 0;
+            result = user_input + 10f;
 
-            num_1 = Convert.ToInt32(Console.ReadLine());
-            num_2 = Convert.ToInt32(Console.ReadLine());
+            // result = result * 2f;
 
-            Console.WriteLine("First: " + num_1 + ". " + "Second: " + num_2 + ".");
+            result *= 2f;
+
+            result--;
+
+            // result = user_input - 10f;
+            // result = user_input * 10f;
+            // result = user_input / 10f;
+            // result = user_input % 10f;
+
+            Console.WriteLine("Variable: " + result);
         }
     }
 }
