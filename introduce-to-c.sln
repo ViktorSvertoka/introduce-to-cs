@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.002.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "introduce-to-c", "introduce-to-c.csproj", "{94EE7B5F-C4BE-469B-815B-8F8A11B5194C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{94EE7B5F-C4BE-469B-815B-8F8A11B5194C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94EE7B5F-C4BE-469B-815B-8F8A11B5194C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94EE7B5F-C4BE-469B-815B-8F8A11B5194C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94EE7B5F-C4BE-469B-815B-8F8A11B5194C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {74CD6F3E-B32B-4251-A2E2-9653AD4B3F7B}
+	EndGlobalSection
+EndGlobal
