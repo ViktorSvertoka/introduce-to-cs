@@ -1,31 +1,21 @@
-﻿using System;
-
-namespace introduce_to_c {
+﻿namespace introduce_to_c {
     class Program {
         static void Main() {
 
-            // double user_input = Convert.ToDouble(Console.ReadLine());
+            // Console.WriteLine(Math.Round(4.99f));
+            // Console.WriteLine(Math.Ceiling(4.99f));
+            // Console.WriteLine(Math.Floor(4.99f));
 
-            Console.Write("Enter a number with a dot: ");
+            // Console.WriteLine(Math.Min(5, 0));
+            // Console.WriteLine(Math.Max(5, 0));
 
-            float user_input = float.Parse(Console.ReadLine());
+            Console.WriteLine("Enter the radius of the circle");
 
-            float result;
+            double radius = Convert.ToDouble(Console.ReadLine());
+            
+            double area = Math.PI * Math.Pow(radius, 2);
 
-            result = user_input + 10f;
-
-            // result = result * 2f;
-
-            result *= 2f;
-
-            result--;
-
-            // result = user_input - 10f;
-            // result = user_input * 10f;
-            // result = user_input / 10f;
-            // result = user_input % 10f;
-
-            Console.WriteLine("Variable: " + result);
+            Console.WriteLine("The area of a circle with radius {0} is {1}", radius, area);
         }
     }
 }
