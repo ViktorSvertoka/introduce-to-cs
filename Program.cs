@@ -1,17 +1,30 @@
-﻿using System.Formats.Asn1;
-
-namespace introduce_to_c {
+﻿namespace introduce_to_c {
     class Program {
         static void Main() {
 
-            int a = 5;
+            Console.WriteLine("Enter the number: ");
 
-            if (a > 7) {
-                Console.WriteLine("Number > 5");
-            } else if (a < 5) {
-                Console.WriteLine("Number < 5");
-            } else {
-                Console.WriteLine("Number is not 5");
+            short user_input = Convert.ToInt16(Console.ReadLine());
+
+            switch(user_input) {
+                case 5:
+                    Console.WriteLine("Number is 5");
+                    break;
+                case 10:
+                    Console.WriteLine("Number is 10");
+                    break;
+                case 15:
+                    Console.WriteLine("Number is 15");
+                    break;
+                case 20:
+                    Console.WriteLine("Number is 20");
+                    break;
+                case 25:
+                    Console.WriteLine("Number is 25");
+                    break;
+                default:
+                    Console.WriteLine("Number is unrecognized!");
+                    break;
             }
         }
     }
