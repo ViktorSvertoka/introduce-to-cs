@@ -1,39 +1,39 @@
-﻿using System.Collections.Generic;
+﻿
 
 namespace introduce_to_c {
     class Program {
         static void Main() {
+            // Print("Hello");
+            // string words = "Hello world";
+            // Print(words);
 
-            // short[] nums = { 5, 6, 7, 8, 5, 3, 4 };
+            // int res1 = Summa(5, 9);
+            // int a = 4, b = 7;
+            // int res2 = Summa(a, b);
+            // Print(res1.ToString());
+            // Print(res2.ToString());
 
-            // foreach(short el in nums) {
-            //     Console.WriteLine("El: " + el);
-            // }
+            byte[] nums = { 5, 7, 8, 3, 5 };
+            byte res1 = Summa(nums);
+            Console.WriteLine("Result: " + res1);
 
-            // short[,] nums = { { 5, 6, 7 }, { 8, 5, 3 }, { 4, 6, 8 } };
+        }
 
-            // foreach(short el in nums) {
-            //     Console.WriteLine("El: " + el);
-            // }
+        public static void Print(string word) {
+            Console.WriteLine(word);
+        }
 
-            List<int> numbers = new List<int>(){
-                4, 6, 7
-            };
+         public static int Summa(int x, int y) {
+            return x + y;
+            
+        }
 
-            numbers.Add(40);
-            numbers.Add(100);
-            numbers.Add(5);
+        public static byte Summa(byte[] digits) {
+            byte summ = 0;
+            foreach (byte el in digits)
+                summ += el;
 
-            numbers.Remove(100);
-
-            numbers.Sort();
-            numbers.Reverse();
-
-            foreach(int el in numbers) {
-                Console.WriteLine("El: " + el);
-            }
-
-
+            return summ;
         }
     }
 }
