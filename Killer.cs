@@ -13,6 +13,12 @@ namespace introduce_to_c {
 
         }
 
+        public override void printValues() {
+            base.printValues();
+
+            Console.WriteLine("Health: " + this.Health);
+        }
+
 
 
         public void Lazer() { 
