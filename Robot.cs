@@ -9,6 +9,8 @@ namespace introduce_to_c {
 
         private byte[] coordinates;
 
+        protected string surname;
+
         public int Weight {
             get {
                 return this.weight;
