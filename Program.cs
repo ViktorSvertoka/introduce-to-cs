@@ -10,7 +10,7 @@ namespace introduce_to_c {
             bot.printValues();
 
 
-            Killer killer = new Killer("Killer", 1000, new byte[] {0, 0, 10}, 100);
+            Killer killer = new Killer("Killer", 1000, new byte[] {0, 0, 10}, 100, Type.Hero);
             killer.printValues();
             killer.Health = 100;
             killer.Lazer();

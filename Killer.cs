@@ -2,14 +2,19 @@ using System;
 
 namespace introduce_to_c {
 
+    enum Type {Enemy, Hero, Traitor}
+
     class Killer : Robot {
 
         public int Health { get; set; }
 
+        public Type type;
+
         public Killer() {}
 
-        public Killer(string name, int weight, byte[] coordinates, int health) : base(name, weight, coordinates) {
+        public Killer(string name, int weight, byte[] coordinates, int health, Type type) : base(name, weight, coordinates) {
             this.Health = health;
+            this.type = type;
 
         }
 
