@@ -9,6 +9,18 @@ namespace introduce_to_c {
 
         private byte[] coordinates;
 
+        public int Weight {
+            get {
+                return this.weight;
+            }
+            set {
+                if(value < 1)
+                    this.weight = 1;
+                else
+                    this.weight = value;
+            }
+        }
+
         public Robot(string name, int weight, byte[] coordinates) {
             Console.WriteLine("Object has been created");
             this.setValues(name, weight, coordinates);
