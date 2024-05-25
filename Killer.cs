@@ -14,8 +14,7 @@ namespace introduce_to_c {
         }
 
         public override void printValues() {
-            base.printValues();
-
+            Console.WriteLine(this.Name + " weight: " + this.Weight + ".");
             Console.WriteLine("Health: " + this.Health);
         }
 

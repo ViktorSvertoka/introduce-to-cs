@@ -15,7 +15,14 @@ namespace introduce_to_c {
             }
             private set { } 
                 
-            
+        }
+
+         public byte[] Coordinates {
+            get {
+                return coordinates;
+            }
+            private set { } 
+                
         }
 
         protected string surname;
@@ -45,10 +52,6 @@ namespace introduce_to_c {
             this.coordinates = coordinates;
         }
 
-        public void printValues() {
-            Console.WriteLine(this.name + " weight: " + this.weight + ". Coordinates: ");
-            foreach (byte el in this.coordinates)
-                Console.WriteLine(el);
-        }
+        public abstract void printValues();
     }
 }
