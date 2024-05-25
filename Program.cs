@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace introduce_to_c {
     class Program {
@@ -12,6 +13,22 @@ namespace introduce_to_c {
             killer.printValues();
             killer.Health = 100;
             killer.Lazer();
+
+
+            List<Killer> robots = new List<Killer>();
+            robots.Add(new Killer("Alex", 400, new byte[] {0, 0, 10}, 100));
+            robots.Add(new Killer("Bob", 600, new byte[] {0, 10, 10}, 100));
+            robots.Add(new Killer("John", 800, new byte[] {10, 0, 10}, 100));
+            robots.Add(new Killer("Josh", 500, new byte[] {0, 20, 30}, 100));
+
+            Robot newRobot = null;
+            foreach(Killer obj in robots) {
+                if(obj.Name == "John") {
+                    newRobot = obj as Robot;
+                }
+                Console.WriteLine(obj is Robot);
+            }
+
 
             
         }

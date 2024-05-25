@@ -9,6 +9,15 @@ namespace introduce_to_c {
 
         private byte[] coordinates;
 
+         public string Name {
+            get {
+                return name;
+            }
+            private set { } 
+                
+            
+        }
+
         protected string surname;
 
         public int Weight {
