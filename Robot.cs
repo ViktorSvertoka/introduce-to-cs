@@ -1,7 +1,7 @@
 using System;
 
 namespace introduce_to_c {
-    class Robot {
+    abstract class Robot : IRun, IJump {
 
         private string name;
 
@@ -39,6 +39,10 @@ namespace introduce_to_c {
             }
         }
 
+        public float speed { get; set; }
+
+        public float y { get; set; }
+
         public Robot(string name, int weight, byte[] coordinates) {
             Console.WriteLine("Object has been created");
             this.setValues(name, weight, coordinates);
@@ -53,5 +57,13 @@ namespace introduce_to_c {
         }
 
         public abstract void printValues();
+
+        public void RobotRun() {
+            Console.WriteLine("Robot is now running");
+        }
+
+        public void Jump() {
+            Console.WriteLine("Robot is now jumping");
+        }
     }
 }
