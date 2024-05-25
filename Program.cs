@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Security.Cryptography.X509Certificates;
 
 namespace introduce_to_c {
     class Program {
@@ -30,7 +31,24 @@ namespace introduce_to_c {
             }
 
 
-            
+            Multiply(1.5f, 3.6f);
+            Multiply(1, 3);
+            Multiply(5);
+        }
+
+        public static void Multiply(int a, int b) {
+            int res = a * b;
+            Console.WriteLine("Result: " + res);
+        }
+
+         public static void Multiply(float a, float b) {
+            float res = a * b;
+            Console.WriteLine("Result: " + res);
+        }
+
+         public static void Multiply(int a) {
+            int res = a * 2;
+            Console.WriteLine("Result: " + res);
         }
     }
 }
