@@ -6,6 +6,11 @@ namespace introduce_to_c {
     class Program {
         static void Main() {
 
+            Book silmarillion = new Book();
+            silmarillion.setValues("Silmarillion", "John T");
+            silmarillion.printValues();
+
+
             Robot bot = new Robot("Bot", 800, new byte[] {0, 0, 0});
             bot.printValues();
 
